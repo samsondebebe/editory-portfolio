@@ -32,18 +32,19 @@
   height: 100%;
 }
 
-.hero__banner-image {
+.hero__banner-video {
   position: absolute;
   inset: 0;
-  background-image: url('/colorlab-client2.jpg');
-  background-size: cover;
-  background-position: center 30%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
   filter: brightness(0.55) contrast(1.2) saturate(1.1);
   transform: scale(1.05);
   transition: transform 12s ease-out;
 }
 
-.hero--loaded .hero__banner-image {
+.hero--loaded .hero__banner-video {
   transform: scale(1);
 }
 

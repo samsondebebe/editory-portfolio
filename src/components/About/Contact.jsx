@@ -13,8 +13,7 @@ export default function Contact() {
   const channels = [
     { label: 'Direct Email', value: 'samsond3b3b3@gmail.com', href: `mailto:${email}`, type: 'email' },
     { label: 'Telegram Direct', value: '@samsondebebe', href: 'https://t.me/samsondebebe', external: true },
-    { label: 'Instagram', value: '@samson_debebe', href: 'https://instagram.com/samson_debebe', external: true },
-    { label: 'Vimeo Channel', value: 'vimeo.com/samsondebebe', href: 'https://vimeo.com', external: true }
+    { label: 'Instagram', value: '@samson_debebe', href: 'https://instagram.com/samson_debebe', external: true }
   ];
 
   const { setRef, isVisible } = useStaggerReveal(channels.length, { threshold: 0.1, staggerDelay: 80 });
@@ -83,11 +82,25 @@ export default function Contact() {
           ))}
         </div>
 
-        {/* Availability Footer Bar */}
-        <div className="contact-location-info">
-          <div className="location-item">
-            <span className="loc-label">LOCATION & TIMEZONE</span>
-            <span className="loc-value">Addis Ababa, Ethiopia · EAT (UTC+3)</span>
+        {/* QR Codes */}
+        <div className="contact-qr-section">
+          <div className="qr-card">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://t.me/samsondebebe&color=e8e8e8&bgcolor=1a1a1a"
+              alt="Telegram QR Code"
+              className="qr-image"
+            />
+            <span className="qr-label">Telegram</span>
+            <span className="qr-value">@samsondebebe</span>
+          </div>
+          <div className="qr-card">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=tel:+251949410123&color=e8e8e8&bgcolor=1a1a1a"
+              alt="Phone QR Code"
+              className="qr-image"
+            />
+            <span className="qr-label">Phone</span>
+            <span className="qr-value">+251 949 410 123</span>
           </div>
         </div>
       </div>

@@ -88,12 +88,6 @@ export default function VideoModal({ project, onClose }) {
                 </div>
               </div>
             )}
-            {project.year && (
-              <div className="spec-group">
-                <span className="spec-label">YEAR</span>
-                <span className="spec-value">{project.year}</span>
-              </div>
-            )}
           </div>
         </div>
       </div>

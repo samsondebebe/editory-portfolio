@@ -14,7 +14,6 @@ const toolkitData = [
     brandGlow: 'rgba(153, 153, 255, 0.25)',
     logoType: 'pr',
     spec: 'Multi-Cam · Dynamic Link · 4K/8K RAW',
-    experience: '5+ Years Daily',
     skills: ['Timeline Pacing', 'ProRes Masters', 'Multi-Angle Sync', 'Dialogue Cleanup']
   },
   {
@@ -28,7 +27,6 @@ const toolkitData = [
     brandGlow: 'rgba(210, 145, 255, 0.25)',
     logoType: 'ae',
     spec: '3D Tracking · Kinetic Type · Compositing',
-    experience: '4+ Years',
     skills: ['Kinetic Typography', '3D Camera Tracking', 'Rotoscoping', 'Screen Replacements']
   },
   {
@@ -42,7 +40,6 @@ const toolkitData = [
     brandGlow: 'rgba(255, 77, 77, 0.25)',
     logoType: 'davinci',
     spec: 'ACES 1.3 · Film Print Emulation · HDR',
-    experience: 'Color Specialist',
     skills: ['Kodak 2383 LUTs', 'Skin Tone Isolation', 'Shot Matching', 'Noise Reduction']
   },
   {
@@ -56,7 +53,6 @@ const toolkitData = [
     brandGlow: 'rgba(0, 229, 255, 0.25)',
     logoType: 'capcut',
     spec: 'Retention Hooks · Speed Ramps · SFX',
-    experience: 'Viral Fast-Cut',
     skills: ['Sound Pacing', 'Dynamic Zooms', 'Auto-Captions', 'High-Energy Reels']
   }
 ];
@@ -146,7 +142,6 @@ export default function Software() {
                 {/* Brand Header */}
                 <div className="tool-card-top">
                   <BrandLogo type={tool.logoType} color={tool.brandColor} />
-                  <span className="tool-experience-badge">{tool.experience}</span>
                 </div>
 
                 {/* Software Name & Category */}

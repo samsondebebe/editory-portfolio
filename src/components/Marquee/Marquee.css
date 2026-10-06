@@ -37,9 +37,7 @@
   animation: marqueeScroll 35s linear infinite;
 }
 
-.marquee-wrapper:hover .marquee-track {
-  animation-play-state: paused;
-}
+/* Marquee always scrolls — no hover pause */
 
 .marquee-item {
   display: flex;

@@ -59,7 +59,6 @@ function VerticalReelCard({ project, onSelect }) {
             ref={videoRef}
             className={`reel-video-layer ${isHovered ? 'is-active' : ''}`}
             src={project.previewVideo}
-            muted
             loop
             playsInline
             preload="metadata"
@@ -147,7 +146,6 @@ function LandscapeCard({ project, onSelect }) {
             ref={videoRef}
             className={`landscape-video-layer ${isHovered ? 'is-active' : ''}`}
             src={project.previewVideo}
-            muted
             loop
             playsInline
             preload="metadata"

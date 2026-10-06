@@ -20,7 +20,6 @@ const pillars = [
 ];
 
 const focusAreas = [
-  'Commercials & Brand Films',
   'High-Retention Shorts & Reels',
   'Documentary & Narrative Cuts',
   'Music Videos & Tour Recaps',
@@ -54,17 +53,17 @@ export default function About() {
           className={`about-quote-box ${quoteVisible ? 'is-visible' : ''}`}
         >
           <blockquote className="about-quote">
-            "Anyone can cut clips together. The art is knowing where the emotional climax lives, when to breathe, and when to hit with relentless rhythm."
+            "You write to communicate to the hearts and minds of others what's burning inside you, and we edit to let the fire show through the smoke."
           </blockquote>
-          <span className="quote-author">— Samson Debebe</span>
+          <span className="quote-author">— Arthur Plotnik</span>
         </div>
 
         {/* Story & Focus Split */}
         <div className="about-split-grid">
           <div className="about-bio-column">
-            <h3 className="column-title">The Story</h3>
+            <h3 className="column-title">The Editor</h3>
             <p>
-              Based in Addis Ababa and working with creators, brands, and production studios worldwide, I bring an obsessive commitment to visual rhythm, cinematic tone, and dynamic pacing.
+              Based in Addis Ababa, I bring an obsessive commitment to visual rhythm, cinematic tone, and dynamic pacing. Every project is approached with fresh eyes and a relentless pursuit of perfection in every frame.
             </p>
             <p>
               Whether it’s a 30-second TikTok that generates millions of impressions or a 15-minute documentary that tells an intimate human story, every frame is treated like a still photograph, and every cut is locked to the emotional heartbeat of the piece.

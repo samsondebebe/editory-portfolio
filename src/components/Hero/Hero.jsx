@@ -33,8 +33,7 @@ export default function Hero({ onOpenShowreel }) {
         description: 'A dynamic showcase of kinetic typography, procedural motion graphics, high-energy commercial pacing, and visual storytelling.',
         client: 'Global Clients & Creators',
         tools: ['Premiere Pro', 'DaVinci Resolve', 'After Effects'],
-        year: '2026',
-        videoUrl: '/hello after effects.mp4'
+        videoUrl: '/main.mp4'
       });
     }
   };
@@ -52,7 +51,14 @@ export default function Hero({ onOpenShowreel }) {
       {/* 1. Cinematic Reel Banner */}
       <div className="hero__banner">
         <div className="hero__banner-media">
-          <div className="hero__banner-image" />
+          <video
+            className="hero__banner-video"
+            src="/main.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           <div className="hero__banner-noise" />
           <div className="hero__banner-overlay" />
         </div>
